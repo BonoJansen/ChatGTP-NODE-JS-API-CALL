@@ -1,5 +1,7 @@
 # ChatGTP-NODE-JS-API-CALL
+
 ##Fixed that damm console spam
+
 A simple Nodejs function to call the ChatGTP endpoint
 
 install axios:
