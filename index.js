@@ -27,14 +27,14 @@ async function chatGTP(input) {
         };
         let completion = await axios(config)
             .then(function (response) {
-                console.log(JSON.stringify(response.data));
+//                 console.log(JSON.stringify(response.data));
                 let output = response.data.choices[0].message;
                 return output
             })
             .catch(function (error) {
                 console.log(error, 'error in calling chat completion');
             });
-        console.log('CHATGTP response', completion)
+//         console.log('CHATGTP response', completion)
         return completion
     } catch (e) {
         console.log(e, ' error in the callChatGTP function')
